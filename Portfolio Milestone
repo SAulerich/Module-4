@@ -9,7 +9,7 @@ item_Price = float(0.0)
 item_Quantity = int(0)
 #   Default constructor: Initializes item's name = "none", item's price = 0, item's quantity = 0
 class Item:
-  def__init__(self):
+  def __init__(self):
     self.item_Name = "none"
     self.item_Price = 0.0
     self.item_Quantity = 0
@@ -32,6 +32,6 @@ item2_Cost = item2_Price * item2_Quantity
 print(item2_Cost)
 
 # Step 3: Add the costs of the two items together and output the total cost.
-item1_Line = '{} {} @ ${} = ${}'.format(item1, item1_quantity, item1_price, item1_cost)
-item2_Line = '{} {} @ ${} = ${}'.format(item2, item2_quantity, item2_price, item2_cost)
-print(' TOTAL COST\n', item1_line, '\n', item2_line, '\n', 'Total: $', (item1_cost + item2_cost))
+item1_Line = '{} {} @ ${} = ${}'.format(item1_Name, item1_Quantity, item1_Price, item1_Cost)
+item2_Line = '{} {} @ ${} = ${}'.format(item2_Name, item2_Quantity, item2_Price, item2_Cost)
+print(' TOTAL COST\n', item1_Line, '\n', item2_Line, '\n', 'Total: $', (item1_Cost + item2_Cost))
