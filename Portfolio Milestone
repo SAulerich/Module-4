@@ -1,0 +1,37 @@
+# Name: Stephen Aulerich
+# Course: CSC500
+# Module: 4
+
+# Step 1: Build the ItemToPurchase class with the following specifications:
+#   Attributes: item_name (string), item_price (float), item_quantity (int)
+item_Name = 'String'
+item_Price = float(0.0)
+item_Quantity = int(0)
+#   Default constructor: Initializes item's name = "none", item's price = 0, item's quantity = 0
+class Item:
+  def__init__(self):
+    self.item_Name = "none"
+    self.item_Price = 0.0
+    self.item_Quantity = 0
+#   Method: print_item_cost()
+def print_item_cost(self):
+  print(f'{self.item_Name} {self.item_Quantity} @ ${self.item_Price} = ${self.item_Price * self.item_Quantity}')
+
+# Step 2: In the main section of your code, prompt the user for two items and create two objects of the ItemToPurchase class.
+#   Item 1: Chocolate Chips for $3 a piece (1 item total)
+item1_Name = "Chocolate Chips"
+item1_Price = 3
+item1_Quantity = 1
+item1_Cost = item1_Price * item1_Quantity
+print(item1_Cost)
+#   Item 2: Bottled Water for $1 a piece (10 items total)
+item2_Name = "Bottled Water"
+item2_Price = 1
+item2_Quantity = 10
+item2_Cost = item2_Price * item2_Quantity
+print(item2_Cost)
+
+# Step 3: Add the costs of the two items together and output the total cost.
+item1_Line = '{} {} @ ${} = ${}'.format(item1, item1_quantity, item1_price, item1_cost)
+item2_Line = '{} {} @ ${} = ${}'.format(item2, item2_quantity, item2_price, item2_cost)
+print(' TOTAL COST\n', item1_line, '\n', item2_line, '\n', 'Total: $', (item1_cost + item2_cost))
