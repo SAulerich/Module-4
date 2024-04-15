@@ -1,0 +1,49 @@
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Name: Stephen Aulerich
+>>> # Course: CSC500
+>>> # Module: 4
+>>>
+>>> # Step 1: Build the ItemToPurchase class with the following specifications:
+>>> #   Attributes: item_name (string), item_price (float), item_quantity (int)
+>>> item_Name = 'String'          # Displays what a string item looks like
+>>> item_Price = float(0.0)    # Displays what a floating number looks like
+>>> item_Quantity = int(0)     # Displays what a integar number looks like
+>>> #   Default constructor: Initializes item's name = "none", item's price= 0, item's quantity = 0
+>>> class Item:                   # Using the class keyward allows the userto create customized object that group together
+...     def __init__(self):         # def is used to define the funtion __init__ which acts as a constructor that sets up the attributes of an object
+...             self.item_Name = "none"   # Using self. before the variables helps Python identify that the objects of each variable is only created for the object created from this particular class
+...             self.item_Price = 0.0     # Even though the last varibale sting is none, and the price and quantity variables are zeroed out, it is important to know that this is only to show the class was created and not meantfor anything in particular
+...             self.item_Quantity = 0
+...
+>>> #   Method: print_item_cost()
+>>> def print_item_cost(self):    # Instead of a simple print function, by defining the the print_item_cost function to the self object, this will onlyshow calculations based on information on the particular object in call
+...     print(f'{self.item_Name} {self.item_Quantity} @ ${self.item_Price} = ${self.item_Price * self.item_Quantity}')
+...
+>>> # Step 2: In the main section of your code, prompt the user for two items and create two objects of the ItemToPurchase class.
+>>> #   Item 1: Chocolate Chips for $3 a piece (1 item total)
+>>> item1_Name = "Chocolate Chips"
+>>> item1_Price = 3
+>>> item1_Quantity = 1
+>>> item1_Cost = item1_Price * item1_Quantity
+>>> print(item1_Cost)
+3
+>>> #   Item 2: Bottled Water for $1 a piece (10 items total)
+>>> item2_Name = "Bottled Water"
+>>> item2_Price = 1
+>>> item2_Quantity = 10
+>>> item2_Cost = item2_Price * item2_Quantity
+>>> print(item2_Cost)
+10
+>>> # In this step, this is just a simple display of information for each item item such as the name, price, and quantity in need of each product on myShopping List
+>>>
+>>> # Step 3: Add the costs of the two items together and output the total cost.
+>>> item1_Line = '{} {} @ ${} = ${}'.format(item1_Name, item1_Quantity, item1_Price, item1_Cost)       # To keep my print function neat looking, I created a formated sentence for the item
+>>> item2_Line = '{} {} @ ${} = ${}'.format(item2_Name, item2_Quantity, item2_Price, item2_Cost)       # For item 2, I created is similarly to the lineof code above, but made the information appropraite to the second item
+>>> print(' TOTAL COST\n', item1_Line, '\n', item2_Line, '\n', 'Total: $', (item1_Cost + item2_Cost))  # Since the assignment example looked somewhat like a four line block of information, I tried mimicking my print the same way
+
+ TOTAL COST
+ Chocolate Chips 1 @ $3 = $3
+ Bottled Water 10 @ $1 = $10
+ Total: $ 13
+>>>
